@@ -1,0 +1,58 @@
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    z-index:2;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+.language-btn  {
+    margin: -24px auto;
+    background-color: rgb(49, 47, 56);
+            border: none;
+            padding: 0;
+            width: 32px; /* Set the button size as needed */
+            height: 32px; /* Set the button size as needed */
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    border-radius: 50%;
+            transition: filter 0.3s;
+            overflow: hidden;
+}
+.language-div {
+    padding: 15px 0;
+    position:relative;
+}
+.language-div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #a8ffcc;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+
+.language-div:hover::before {
+    transform: scaleX(1);}
+.language-btn:hover {
+cursor:pointer;}
+.language-btn img {
+    
+
+            width: 200%;
+            height: 200%;}
