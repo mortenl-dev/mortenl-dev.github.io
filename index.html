@@ -373,10 +373,10 @@ fetch(`https://api.github.com/users/${username}/repos`)
   function switchElement(direction) {
     currentIndex += direction;
 
-    if (currentIndex < -7) {
-      currentIndex = 7 - 1;        //elements.length
-    } else if (currentIndex >= 7) { //NEEDS TO BE 14 ITS 0
-      currentIndex = -7;
+    if (currentIndex < -(repoDetailsArray.Length % 2)) {
+      currentIndex = repoDetailsArray.Length % 2 - 1;        //elements.length
+    } else if (currentIndex >= repoDetailsArray.Length % 2) { //NEEDS TO BE 14 ITS 0
+      currentIndex = -(repoDetailsArray.Length % 2);
     }
 
     updateDisplay();
