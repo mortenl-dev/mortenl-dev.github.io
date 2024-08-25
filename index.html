@@ -312,22 +312,6 @@ fetch(`https://api.github.com/users/${username}/repos`)
     if (!response.ok) {
       throw new Error(`Failed to fetch repositories: ${response.statusText}`);
     }
-    const repoElement = document.createElement('div');
-      const repoInner = document.createElement('div');
-      repoInner.classList.add('repo-info');
-      repoElement.classList.add('project');
-      if (data.language == null) {
-        data.language = "";
-      }
-      const repoInfo = `
-      <a style="font-size:24px " href="${data.html_url}" target="_blank" class="fade-underline">${data.name}</a>
-      <p> | ${data.description}</p>
-      
-      <p>${data.language}</p>
-      `;
-      repoInner.innerHTML = repoInfo;
-      repoElement.appendChild(repoInner);
-      container.appendChild(repoElement);
     return response.json();
   })
   .then(repositories => {
@@ -389,10 +373,10 @@ fetch(`https://api.github.com/users/${username}/repos`)
   function switchElement(direction) {
     currentIndex += direction;
 
-    if (currentIndex < -(repoDetailsArray.Length % 2)) {
-      currentIndex = repoDetailsArray.Length % 2 - 1;        //elements.length
-    } else if (currentIndex >= repoDetailsArray.Length % 2) { //NEEDS TO BE 14 ITS 0
-      currentIndex = -(repoDetailsArray.Length % 2);
+    if (currentIndex < -7) {
+      currentIndex = 7 - 1;        //elements.length
+    } else if (currentIndex >= 7) { //NEEDS TO BE 14 ITS 0
+      currentIndex = -7;
     }
 
     updateDisplay();
