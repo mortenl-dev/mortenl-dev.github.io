@@ -237,7 +237,9 @@ async function fetchData() {
 
   } catch (error) {
       console.error("Error fetching data from GitHub API:", error);
-      document.getElementById("repoCount").textContent = "Error fetching data.";
+      document.getElementById("GithubCounter").textContent = "Error fetching data.";
+      document.getElementById("CommitCounter").textContent = "Error fetching data.";
+
   }
 }
 function countAnimation (len, counterElement, color) {
