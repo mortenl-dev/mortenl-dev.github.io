@@ -104,7 +104,7 @@
                 <h3 data-lang data-lang-english="Highschool" data-lang-german="Gymnasium"></h3>
                 
                 <p data-lang data-lang-english="I went to the Felix-Mendelssohn-Bartholdy-Gymnasium in Berlin, where I earned my German Abitur with chemistry and English as my main subjects." data-lang-german="Ich besuchte das Felix-Mendelssohn-Bartholdy-Gymnasium in Berlin, wo ich mein deutsches Abitur mit den Leistungskursen Chemie und Englisch erworben habe."></p>
-                
+            
                 <a href="Abiturzeugnis.pdf" target="_blank" data-lang data-lang-english="Click to view degree documents" data-lang-german="Klicken Sie, um mein Zeugnis anzuzeigen"></a>
             </div>
 
@@ -333,7 +333,6 @@ fetch(`https://api.github.com/users/${username}/repos`)
       if (data.language == null) {
         data.language = "";
       }
-      // Extract the information you need from the data object
       const repoInfo = `
       <a style="font-size:24px " href="${data.html_url}" target="_blank" class="fade-underline">${data.name}</a>
       <p> | ${data.description}</p>
