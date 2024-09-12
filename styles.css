@@ -87,19 +87,19 @@ a {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    object-fit: cover; 
+    object-fit: cover;
     position:absolute;
 }
 .shaper {
 background: gray url("Screenshot (152).png") repeat 0 0;
 width: 100%;
 text-align: center;
-height: 2000px;
+height: 1718px;
 box-sizing: border-box;
--webkit-animation: slide 50s linear infinite;
+-webkit-animation: slide 20s linear infinite;
 }
 
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
-    to { background-position: 0 -512px; }
+    to { background-position: 0 -1718px; }
 }
