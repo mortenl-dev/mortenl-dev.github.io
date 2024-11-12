@@ -7,24 +7,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    year: 2023,
+    title: "Weafy",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Weafy is an ambient environment monitoring solution that keeps track of plant moisture levels, air quality, temperature, humidity, and ambient light levels in your environment. It provides real-time data analyzed using custom ML models to alert you when it's best to water your plants to provide the best results and care.",
+    url: "https://github.com/AdamSotak/water-app",
   },
   {
-    title: "Project Two",
-    year: 2022,
+    title: "Reactor Rush",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Reactor Rush is my 1st semester project. A terminal-based C# game where you must manage a simulated nuclear reactor and keep it running for as long as possible.",
+    url: "https://github.com/mortenl-dev/reactor",
   },
   {
-    title: "Project Three",
-    year: 2021,
+    title: "View all my other projects",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "If you wish to take a look at some of my minor projects, please visit my Github.",
+    url: "https://github.com/mortenl-dev",
   },
 ];
