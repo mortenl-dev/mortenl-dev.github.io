@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -35,5 +36,10 @@ const nextConfig = {
     ];
   },
 };
+module.exports = {
+  output: 'export',
+  basePath: isProd ? '/mortenl-dev.github.io' : '',
+  assetPrefix: isProd ? '/mortenl-dev.github.io/' : '',
+  
+};
 
-module.exports = nextConfig;

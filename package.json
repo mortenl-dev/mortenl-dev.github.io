@@ -3,8 +3,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@types/node": "22.5.0",
@@ -19,6 +20,7 @@
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",
     "node": "^23.2.0",
+    "npm": "^10.9.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^5.3.0",
@@ -33,6 +35,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.14",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.41",
     "tailwindcss": "3.4.10"
   }
