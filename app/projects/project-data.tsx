@@ -14,11 +14,11 @@ export const projects: Project[] = [
     url: "https://github.com/AdamSotak/water-app",
   },
   {
-    title: "Reactor Rush",
-    year: 2024,
+    title: "StoxeBot",
+    year: 2025,
     description:
-      "Reactor Rush is my 1st semester project. A terminal-based C# game where you must manage a simulated nuclear reactor and keep it running for as long as possible.",
-    url: "https://github.com/mortenl-dev/reactor",
+      "StoxeBot is a discord bot which utilizes different API's to display stock market data.",
+    url: "https://github.com/mortenl-dev/StoxeBot",
   },
   {
     title: "View all my other projects",
