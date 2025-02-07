@@ -11,7 +11,7 @@ export const projects: Project[] = [
     year: 2024,
     description:
       "Weafy is an ambient environment monitoring solution that keeps track of plant moisture levels, air quality, temperature, humidity, and ambient light levels in your environment. It provides real-time data analyzed using custom ML models to alert you when it's best to water your plants to provide the best results and care.",
-    url: "https://github.com/AdamSotak/water-app",
+    url: "https://github.com/AdamSotak/weafy",
   },
   {
     title: "StoxeBot",
